@@ -1,0 +1,57 @@
+@import "compass"
+
+$mainHeight: 575px
+$tableLine: 1px solid #CCCCCC
+$pad: 0.2em 0.4em 
+$display-width: 1024px
+$display-height: 768px - 68px
+
+@mixin marginZero
+ margin:
+  top: 0px
+  right: 0px
+  left: 0px
+  bottom: 0px
+
+@mixin borderLine
+ position: relative
+ display: block 
+ border: 5px solid rgba(0, 0, 255, 0)
+
+@mixin common
+ font:
+  size: large
+ margin:
+  top: 0px
+  left: 5px
+  right: 5px
+  bottom: 0px
+
+@mixin common_
+ background:
+  color: white
+ border: 1px solid #cccccc
+  radius: 8px
+ display: inline-block
+ color: #555555
+ +transition(border linear 0.2s, box-shadow linear 0.2s)
+ +border-radius(4px)
+
+@mixin common-table
+ font:
+  size: small
+ margin:
+  top: 0px
+  left: 2px
+  right: 2px
+  bottom: 0px
+
+@mixin common-table_
+ background:
+  color: white
+ border: 1px solid #cccccc
+  radius: 8px
+ display: inline-block
+ color: #555555
+ +transition(border linear 0.2s, box-shadow linear 0.2s)
+ +border-radius(4px)

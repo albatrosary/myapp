@@ -1,0 +1,24 @@
+.main-file
+ @include common
+
+.main-text,
+.main-password
+ @include common
+ @include common_
+ padding: 4px 2px
+
+.main-button,
+.main-submit,
+.main-reset,
+.main-checkbox,
+.main-radio
+ &:focus, &:hover
+  background:
+   color: #dcdcdc
+ &:active
+  background:
+   color: #cccccc
+ @include common
+ @include common_
+ padding: 4px 24px
+ +box-shadow(1px 1px 3px rgba(0, 0, 0.75, 0.75)) 

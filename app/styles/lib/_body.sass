@@ -1,0 +1,53 @@
+body
+ font:
+  size: large
+  color: gray
+ @include marginZero
+ background:
+  color: gray
+
+#body
+ width: $display-width
+ height: $display-height
+ margin: 0 auto
+
+#base
+ width: $display-width
+ +background(linear-gradient(#92b2e5, #5e8ed6))
+
+#base_header
+ font:
+  size: medium
+  color: gray
+ @include marginZero
+ background:
+  color: #ff0000
+ height: 40px
+
+#line
+ @include borderLine
+ height: $mainHeight
+
+#main
+ font:
+  size: x-large
+ background:
+  color: #fffff4
+ height: $mainHeight
+ +border-top-left-radius(3px)
+ +border-top-right-radius(3px)
+ overflow: scroll
+
+#footer_base
+ background:
+  color: white
+ width: $display-width
+
+#footer
+ background:
+  color: white
+ width: 100%
+ text-align: right
+
+#footer_line
+ @include borderLine

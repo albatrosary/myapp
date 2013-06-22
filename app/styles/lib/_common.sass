@@ -68,8 +68,6 @@ $header_height: 56px
 
 @mixin button-events
  &:focus, &:hover
-  background:
-   color: #dcdcdc
+  +background(linear-gradient(#ccc, #fff))
  &:active
-  background:
-   color: #cccccc
+  +background(linear-gradient(#ccc, #ccc))

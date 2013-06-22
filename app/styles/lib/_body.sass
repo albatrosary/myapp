@@ -20,9 +20,11 @@ body
   size: medium
   color: gray
  @include marginZero
- background:
-  color: #ff0000
+ display: block
+ +background(linear-gradient(white, #c7d3e9))
  height: 40px
+ border:
+  bottom: solid 2px #5e8ed6
 
 #line
  @include borderLine
@@ -37,17 +39,3 @@ body
  +border-top-left-radius(3px)
  +border-top-right-radius(3px)
  overflow: scroll
-
-#footer_base
- background:
-  color: white
- width: $display-width
-
-#footer
- background:
-  color: white
- width: 100%
- text-align: right
-
-#footer_line
- @include borderLine

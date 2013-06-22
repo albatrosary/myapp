@@ -28,22 +28,25 @@
                     <span>ほげほげ</span><br>
                     <span>ほげほげ</span><br>
                 </div>
+                <div id="header_rig"></div>
                 <div id="header_button">
-                    <div id="header_ubutton">
-                        <span id="login">取扱者:○○○○</span>
-                        <input id="help" type="button" value="ヘルプ">
-                        <input id="close" type="button" value="終了">
+                    <div id="header_upbutton">
+                        <div id="login">取扱者:<span id="login_name">井上和香</span></div>
+                        <input id="help" class="footer-button-left" type="button" value="ヘルプ">
+                        <input id="close" class="footer-button-right" type="button" value="終了">
                     </div>
-                    <div id="header_dbutton">
-                        <span id="display-size">画面サイズ</span>
-                        <input id="return" type="button" value="戻る">
-                        <input id="scaleup" type="button" value="拡大">
+                    <div id="header_downbutton">
+                        <image id="search" src="images/search.png">
+                        <div id="display-size">画面サイズ</div>
+                        <input id="return" class="footer-button-left" type="button" value="戻る">
+                        <input id="scaleup" class="footer-button-right" type="button" value="拡大">
                     </div>
                 </div>
             </div>
 
             <div id="base">
-                <div id="base_header">ほげ
+                <div id="base_header">
+                    <span id="app_title">Sass. - Compass テスト </span>
                 </div>
                 <div id="line">
                     <div id="main">
@@ -65,7 +68,7 @@
                         <span><input class="main-redio" type="radio" value="">radio</span>
                         <span><input class="main-image" type="image" value="">image</span>
                         <hr>
-                        <label>label</label>
+                        <label>label</label><textarea class="main-textarea"></textarea>
                         <hr>
                         <table>
                             <thead><tr><th>header</th><th>1</th><th>input type</th></tr></thead>
@@ -93,17 +96,32 @@
             </div>
         
             <div id="footer_base">
-                <div id="footer_line">
+                <div id="footer_dummy"></div>
+                <div id="footer_rid"></div>
+                <div id="footer_button">
                     <div id="footer">
-
+                        
                         <span>
                             <input class="footer-button" type="button" value="戻る">
                             <input class="footer-button" type="button" value="入力">
                             <input class="footer-button" type="button" value="次へ">
+                            <input class="footer-button" type="button" value="未来">
+                            <input class="footer-button" type="button" value="過去">
+                            <input class="footer-button" type="button" value="現代">
                         </span>
 
                     </div>
                 </div>
+            </div>
+
+            <div id="menu">
+                <input type="button" class="nemu-button" value="何じゃら">
+                <input type="button" class="nemu-button" value="何じゃら">
+                <input type="button" class="nemu-button" value="何じゃら">
+                <input type="button" class="nemu-button" value="何じゃら">
+                <input type="button" class="nemu-button" value="何じゃら">
+                <input type="button" class="nemu-button" value="何じゃら">
+                <input type="button" class="nemu-button" value="何">
             </div>
         </div>
         <!--[if lt IE 7]>

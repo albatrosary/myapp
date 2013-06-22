@@ -1,10 +1,20 @@
 @import "compass"
 
-$mainHeight: 575px
+// 高さの微調整
+$mainHeight: 572px
+
 $tableLine: 1px solid #CCCCCC
 $pad: 0.2em 0.4em 
 $display-width: 1024px
-$display-height: 768px - 68px
+$display-height: 768px - 78px
+$header_height: 56px
+
+@mixin box
+ display: -webkit-box
+ display: -moz-box
+ display: -o-box
+ display: box
+
 
 @mixin marginZero
  margin:
@@ -55,3 +65,11 @@ $display-height: 768px - 68px
  color: #555555
  +transition(border linear 0.2s, box-shadow linear 0.2s)
  +border-radius(4px)
+
+@mixin button-events
+ &:focus, &:hover
+  background:
+   color: #dcdcdc
+ &:active
+  background:
+   color: #cccccc

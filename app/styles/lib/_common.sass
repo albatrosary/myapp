@@ -1,7 +1,9 @@
 @import "compass"
 
 // 高さの微調整
-$mainHeight: 572px
+$mainHeight: 546px
+
+$font-color: gray
 
 $tableLine: 1px solid #CCCCCC
 $pad: 0.2em 0.4em 
@@ -15,7 +17,6 @@ $header_height: 56px
  display: -o-box
  display: box
 
-
 @mixin marginZero
  margin:
   top: 0px
@@ -28,46 +29,8 @@ $header_height: 56px
  display: block 
  border: 5px solid rgba(0, 0, 255, 0)
 
-@mixin common
- font:
-  size: large
- margin:
-  top: 0px
-  left: 5px
-  right: 5px
-  bottom: 0px
-
-@mixin common_
- background:
-  color: white
- border: 1px solid #cccccc
-  radius: 8px
- display: inline-block
- color: #555555
- +transition(border linear 0.2s, box-shadow linear 0.2s)
- +border-radius(4px)
-
-@mixin common-table
- font:
-  size: small
- margin:
-  top: 0px
-  left: 2px
-  right: 2px
-  bottom: 0px
-
-@mixin common-table_
- background:
-  color: white
- border: 1px solid #cccccc
-  radius: 8px
- display: inline-block
- color: #555555
- +transition(border linear 0.2s, box-shadow linear 0.2s)
- +border-radius(4px)
-
 @mixin button-events
  &:focus, &:hover
-  +background(linear-gradient(#ccc, #fff))
+  +background(linear-gradient(#ccc, white))
  &:active
   +background(linear-gradient(#ccc, #ccc))

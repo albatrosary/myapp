@@ -1,7 +1,7 @@
 body
  font:
   size: large
-  color: gray
+  color: $font-color
  @include marginZero
  background:
   color: gray
@@ -18,10 +18,11 @@ body
 #base_header
  font:
   size: medium
-  color: gray
+  color: $font-color
  @include marginZero
  display: block
- +background(linear-gradient(white, #c7d3e9))
+ background:
+  color: #ddd
  height: 40px
  border:
   bottom: solid 2px #5e8ed6

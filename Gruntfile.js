@@ -10,8 +10,9 @@ var mountFolder = function (connect, dir) {
 // use this if you want to match all subfolders:
 // 'test/spec/**/*.js'
 // templateFramework: 'lodash'
-
+// Gruntの設定を包み込む"wrapper"関数についてです。
 module.exports = function (grunt) {
+
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
@@ -21,6 +22,7 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    // 設定オブジェクトの初期化
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
